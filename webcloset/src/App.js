@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faLongArrowAltRight, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import Products from './Products';
 
 function App() {
   const [showSearch, setShowSearch] = useState(false);
@@ -38,7 +39,7 @@ function App() {
   };
 
   return (
-
+    <div className="body">
     <div className="wrapper">
       <nav>
         <input type="checkbox" id="show-search" checked={showSearch} onChange={toggleSearch} />
@@ -47,10 +48,10 @@ function App() {
           <FontAwesomeIcon icon={faArrowLeft} />
         </label>
         <div className="content">
-          <div className="logo">
-            <a href="#">ClosetShop</a>
-          </div>
-          <ul className="links">
+           <ul className="links">
+            <div className='logo'>
+          <li><a href="#">ClosetShop</a></li></div>
+            
             <li>
               <a href="#">Home</a>
             </li>
@@ -129,6 +130,7 @@ function App() {
           </button>
         </form>
       </nav>
+      </div>
       <section className="wrapperpic">
         <FontAwesomeIcon icon={faArrowLeft} className="button" id="prev" onClick={() => updateImageIndex(-1)} />
         <div
@@ -144,8 +146,10 @@ function App() {
         </div>
 
         <FontAwesomeIcon icon={faArrowRight} className="button" id="next" onClick={() => updateImageIndex(1)}  />
-
       </section>
+
+      
+    <Products/>
     </div>
   );
 }
