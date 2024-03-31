@@ -1,0 +1,109 @@
+.cart {
+    width: 70%;
+    height: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+    padding-bottom: 5px; /* เพิ่มช่องว่างด้านล่างของประโยค */
+    position: relative; /* เพิ่มส่วนสำหรับแถบสี */
+  }
+  
+  .cart h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50%;
+    height: 2px;
+    background-color: #142966; /* สีแถบ */
+    transform: translateX(-50%);
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* จัดเรียงตามแนวนอนและแบ่งช่องว่างระหว่างส่วนควบคุมจำนวนสินค้ากับปุ่ม Remove */
+    margin-bottom: 10px;
+  }
+  
+  .cart-item span {
+    flex: 1;
+  }
+  
+  .cart-item button {
+    background-color: #142966;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .cart-item button:hover {
+    background-color: #142966;
+  }
+  
+  .cart h3 {
+    margin-top: 15px;
+    text-align: right;
+    color: #333;
+    font-size: 1.2em; /* เพิ่มขนาดตัวอักษรใหญ่ขึ้น */
+  }
+  .item-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .item-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-controls button {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 5px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+  }
+  
+  .quantity-controls button:hover {
+    background-color: #bbb;
+  }
+  
+  .remove-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .trash-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .remove-button:hover .trash-icon {
+    filter: invert(48%) sepia(79%) saturate(1582%) hue-rotate(330deg) brightness(97%) contrast(97%);
+  }
