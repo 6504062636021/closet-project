@@ -36,9 +36,7 @@ function Navbar(props) {
                 Home
               </a>
             </li>
-            <li>
-              <a href="#">About</a>
-            </li>
+            
             <li>
               <a href="#" className="desktop-link" onClick={toggleServices}>
                 Product
@@ -88,7 +86,7 @@ function Navbar(props) {
               </ul>
             </li>
             <li>
-              <a href="#">Feedback</a>
+              <a href="#">Contact</a>
             </li>
           </ul>
         </div>
@@ -108,6 +106,7 @@ function Navbar(props) {
         <label htmlFor="show-cart" className="cart-icon" onClick={() => setPage("Cart")}>
           <FontAwesomeIcon icon={faCartShopping} />
         </label>
+        
         <label
           htmlFor="show-profile"
           className="profile-icon"

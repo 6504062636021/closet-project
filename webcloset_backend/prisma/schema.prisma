@@ -1,0 +1,51 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Account {
+  id         Int      @id @default(autoincrement())
+  name       String?  @db.VarChar(255)
+  surname    String?  @db.VarChar(255)
+  password   String?  @db.VarChar(255) // เพิ่ม erdiagram
+  address    String?  @db.VarChar(255)
+  tel        String?  @db.VarChar(255) // เพ่ิม erdiagram
+  isAdmin    Boolean? @default(false) // เพิ่ม erdiagram
+  created_at DateTime @default(now()) // เพิ่ม erdiagram
+  updated_at DateTime @updatedAt // เพิ่ม erdiagram
+  Order      Order[]
+}
+
+model Product {
+  id          Int       @id @default(autoincrement())
+  name        String?   @db.VarChar(255)
+  description String?   @db.Text
+  image       String?   @db.VarChar(255)
+  price       Decimal   @db.Decimal(10, 2)
+  category    String?   @db.VarChar(255)
+  stock       Int       @default(0)
+  created_at  DateTime  @default(now())
+  updated_at  DateTime  @updatedAt
+  deleted_at  DateTime?
+}
+
+model Order {
+  id         Int      @id @default(autoincrement())
+  account    Account  @relation(fields: [account_id], references: [id])
+  account_id Int
+  product    String?  @db.Text
+  total      Decimal  @db.Decimal(10, 2)
+  status     String?  @db.VarChar(255)
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}

@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* CSS */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: calc(100% - 22px); /* ลบขนาด padding และ border ออก */
+  padding: 8px; /* ลดขนาด padding */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* เพิ่ม transition */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff; /* เปลี่ยนสีเมื่อ focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* เพิ่มเงาเมื่อ focus */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #171c24;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* เพิ่ม transition */
+}
+
+button:hover {
+  background-color: #171c24;
+}
+
+.contact-info {
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  font-weight: normal;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+/* CSS */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(100% - 20px); /* ลบขนาด padding และ border ออก */
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* เพิ่ม transition */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #171c24; /* เปลี่ยนสีเมื่อ focus */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3); /* เพิ่มเงาเมื่อ focus */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #171c24;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* เพิ่ม transition */
+}
+
+button:hover {
+  background-color: #171c24;
+}@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* CSS */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: calc(100% - 22px); /* ลบขนาด padding และ border ออก */
+  padding: 8px; /* ลดขนาด padding */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* เพิ่ม transition */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff; /* เปลี่ยนสีเมื่อ focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* เพิ่มเงาเมื่อ focus */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #171c24;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* เพิ่ม transition */
+}
+
+button:hover {
+  background-color: #171c24;
+}
+
+.contact-info {
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  font-weight: normal;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+/* CSS */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(100% - 20px); /* ลบขนาด padding และ border ออก */
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* เพิ่ม transition */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #171c24; /* เปลี่ยนสีเมื่อ focus */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3); /* เพิ่มเงาเมื่อ focus */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #171c24;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* เพิ่ม transition */
+}
+
+button:hover {
+  background-color: #171c24;
+}@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* CSS */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: calc(100% - 22px); /* ลบขนาด padding และ border ออก */
+  padding: 8px; /* ลดขนาด padding */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* เพิ่ม transition */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff; /* เปลี่ยนสีเมื่อ focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* เพิ่มเงาเมื่อ focus */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #171c24;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* เพิ่ม transition */
+}
+
+button:hover {
+  background-color: #171c24;
+}
+
+.contact-info {
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  font-weight: normal;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+/* CSS */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(100% - 20px); /* ลบขนาด padding และ border ออก */
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* เพิ่ม transition */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #171c24; /* เปลี่ยนสีเมื่อ focus */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3); /* เพิ่มเงาเมื่อ focus */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #171c24;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* เพิ่ม transition */
+}
+
+button:hover {
+  background-color: #171c24;
+}

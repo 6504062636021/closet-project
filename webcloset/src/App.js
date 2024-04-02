@@ -8,6 +8,7 @@ import Tshirt from "./Tshirt";
 import Sweater from "./Sweater";
 import Hoodie from "./Hoodie";
 import Profile from "./Profile";
+import Payment from "./payment";
 import Cart from "./Cart";
 
 function App() {
@@ -31,9 +32,11 @@ function App() {
         ) : page === "Hoodie" ? (
           <Hoodie />
         ) : page === "Profile" ? (
-          <Profile />
+          <Profile setPage={setPage} />
         ) : page === "Cart" ? (
-          <Cart />
+          <Cart setPage={setPage} />
+        ) : page === "Payment" ? (
+          <Payment setPage={setPage} />
         ):(
           <div></div>
         )}
