@@ -86,7 +86,7 @@ function Navbar(props) {
               </ul>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a onClick={() => setPage("Contact")} href="#">Contact</a>
             </li>
           </ul>
         </div>

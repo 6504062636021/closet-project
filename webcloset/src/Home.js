@@ -29,15 +29,35 @@ function Home() {
    
     return (
         <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
-            <div className="slidepic">
+            {/* <div className="slidepic">
                 <FontAwesomeIcon icon={faArrowLeft} className="button" id="prev" onClick={() => updateImageIndex(-1)} />
                 <div className="image-container" onMouseEnter={() => setIsMouseOverImage(true)} onMouseLeave={() => setIsMouseOverImage(false)}>
                 <div className="carousel" style={{ transform: `translate(-${imageIndex * 100}%)` }}>
-                {images.map((image, index) => (<img key={index} src={image} alt="" />))}
+                {images.map((image, index) => (<img className="w-full" key={index} src={image} alt={image} />))}
                 </div>
                 </div>
-            <FontAwesomeIcon icon={faArrowRight} className="button" id="next" onClick={() => updateImageIndex(1)}  /></div>
-        <div> <Products /></div>   
+            <FontAwesomeIcon icon={faArrowRight} className="button" id="next" onClick={() => updateImageIndex(1)}  />
+            </div> */}
+
+<div className="carousel w-[50%] mt-[130px]">
+
+{images.map((image, index) => (
+  <>
+  <div id={`slide_${index}`} className="carousel-item relative w-full">
+    <img src={image} className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href={`#slide_${index-1}`} className="btn btn-circle">❮</a> 
+      <a href={`#slide_${index+1}`} className="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  </>
+))}
+
+  
+</div>
+        <div> 
+          <Products />
+          </div>   
     
     </div>
 

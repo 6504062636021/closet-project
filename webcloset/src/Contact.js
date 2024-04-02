@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './contact.css'; // นำเข้าไฟล์ CSS สำหรับการสวยงาม
+import Swal from 'sweetalert2';
 
 function ContactPage() {
   const [name, setName] = useState('');
@@ -20,6 +21,13 @@ function ContactPage() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    Swal.fire({
+      title: "Success",
+      text: "ทำการส่งการติดต่อเรียบร้อย",
+      icon: "success",
+      timer: 2000,
+      showConfirmButton: false
+    })
     console.log('Submitted:', { name, email, message });
     setName('');
     setEmail('');
@@ -27,7 +35,10 @@ function ContactPage() {
   };
 
   return (
-    <div className="container">
+    <>
+    <div className="mt-[130px]">
+      
+    <div className="container ">
       <h1>Contact Us</h1>
       <form onSubmit={handleSubmit}>
         <div>
@@ -71,6 +82,8 @@ function ContactPage() {
         <p>Facebook : ClosetShop</p>
       </div>
     </div>
+    </div>
+    </>
   );
 }
 
